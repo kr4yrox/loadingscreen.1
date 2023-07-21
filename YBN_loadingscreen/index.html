@@ -1,0 +1,129 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <title>Returns Loading Screen</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/all.min.js"></script>
+    </header>
+    <body>
+    
+      
+
+        <video id="myVideo" controls autoplay preload="auto" class="bg" >
+        <source src="https://cdn.discordapp.com/attachments/1129504310863073300/1131406668941500468/Video_sans_titre.mp4"></source>
+        </video>
+
+     
+
+        <script> 
+            var vid = document.getElementById("myVideo"); 
+            vid.volume=0.8;
+            function playVid() { 
+              vid.play(); 
+              console.log('test');
+            } 
+            
+            function pauseVid() { 
+              vid.pause(); 
+            } 
+            </script> 
+
+            <script>
+                window.onload = function(){
+            var myVideo = document.getElementById("myVideo");
+            //myVideo.volume = 0.10;
+
+            document.onkeydown = function(event) {
+            switch (event.keyCode) {
+            case 32: //SpaceBar
+             myVideo.muted = !myVideo.muted;
+            break;
+    }
+    return false;
+  }
+}
+            </script>
+            
+        
+        <img id="cursor" src="assets/media/cursor.png">
+
+        <div class="overlay">
+            <div class="container">
+
+
+                <div class="socials">
+                    <p class="title">Réseaux sociaux</p>
+                    <div class="line"></div>
+                    <div class="buttons">
+
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="Hexagone France RP">Returns : Hexagone France RP </p>
+                    <div class="description"><p>Bienvenue sur Hexagone France RP</p>
+                    
+                        <p>  </p>
+                        <p>Bienvenu sur Hexagone France RP ce serveur possede de nombreux scripts et mappings exclusifs, et de nombreux vehicules imports. Les staffs de ce serveur RP sont � l'ecoute ! le serveur et en developpement constant.</p>
+                        </div>
+                    <div class="buttons">
+                        <button id="collapse" style="display: none;">Lire la suite</button>
+                        <button id="read-more">Réduire <i class="fal fa-long-arrow-right" style="margin-left: 0.4vw;font-size: 0.9vw;"></i></button>
+                    </div>
+                </div>
+
+                <div class="loader">
+                    <div class="logo">
+                        <img class="transparent-logo" src="assets/media/transparent-logo.png">
+                    </div>
+                    <p class="progress">0%</p>
+                </div>
+
+                <div class="categories">
+                    <div class="buttons">
+
+                    </div>
+                    <div class="carousel">
+                        
+                        <div class="staff">
+                            <div class="previous"></div>
+                            <div class="cards">
+                                <div class="innercards">
+        
+                                </div>
+                                <div class="pages">
+                                    
+                                </div>
+                            </div>
+                            <div class="next"></div>
+                        </div>
+
+                        <div class="socialmedia">
+
+                        </div>
+                    </div>
+                </div>
+
+        
+
+                <div class="hideoverlay">
+                   <div class="espace">
+                    <p>Appuyer sur <strong>ESPACE</strong> pour muter le son</p>
+                   </div>
+                   
+                   <div class="bind-total">      
+                    <div class="bind"></div>
+                   Cacher l'overlay/Voir la vidéo
+               </div></div>
+              
+
+            </div>
+        </div>
+
+        <script src="assets/scripts/config.js" type="text/javascript"></script>
+        <script src="assets/scripts/main.js" type="text/javascript"></script>
+    </body>
+</html>
+</script>
